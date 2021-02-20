@@ -1,10 +1,10 @@
 <!DOCTYPE HTML>
-<html lang="en">
+<html lang="zh-CN">
 
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="myFirstBlog, Hexo">
+    <meta name="keywords" content="JS案例, Hexo">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>myFirstBlog | Hexo</title>
+    <title>JS案例 | Hexo</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -57,7 +57,7 @@
       
       <i class="fas fa-home" style="zoom: 0.6;"></i>
       
-      <span>Index</span>
+      <span>首页</span>
     </a>
     
   </li>
@@ -68,7 +68,7 @@
       
       <i class="fas fa-tags" style="zoom: 0.6;"></i>
       
-      <span>Tags</span>
+      <span>标签</span>
     </a>
     
   </li>
@@ -79,7 +79,7 @@
       
       <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
       
-      <span>Categories</span>
+      <span>分类</span>
     </a>
     
   </li>
@@ -90,7 +90,7 @@
       
       <i class="fas fa-archive" style="zoom: 0.6;"></i>
       
-      <span>Archives</span>
+      <span>归档</span>
     </a>
     
   </li>
@@ -101,7 +101,7 @@
       
       <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
       
-      <span>About</span>
+      <span>关于</span>
     </a>
     
   </li>
@@ -112,7 +112,7 @@
       
       <i class="fas fa-comments" style="zoom: 0.6;"></i>
       
-      <span>Contact</span>
+      <span>留言板</span>
     </a>
     
   </li>
@@ -123,14 +123,14 @@
       
       <i class="fas fa-address-book" style="zoom: 0.6;"></i>
       
-      <span>Friends</span>
+      <span>友情链接</span>
     </a>
     
   </li>
   
   <li>
     <a href="#searchModal" class="modal-trigger waves-effect waves-light">
-      <i id="searchIcon" class="fas fa-search" title="Search" style="zoom: 0.85;"></i>
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
     </a>
   </li>
 </ul>
@@ -160,7 +160,7 @@
 			
 			    <i class="fa-fw fas fa-home"></i>
 			
-			Index
+			首页
 		</a>
           
         </li>
@@ -171,7 +171,7 @@
 			
 			    <i class="fa-fw fas fa-tags"></i>
 			
-			Tags
+			标签
 		</a>
           
         </li>
@@ -182,7 +182,7 @@
 			
 			    <i class="fa-fw fas fa-bookmark"></i>
 			
-			Categories
+			分类
 		</a>
           
         </li>
@@ -193,7 +193,7 @@
 			
 			    <i class="fa-fw fas fa-archive"></i>
 			
-			Archives
+			归档
 		</a>
           
         </li>
@@ -204,7 +204,7 @@
 			
 			    <i class="fa-fw fas fa-user-circle"></i>
 			
-			About
+			关于
 		</a>
           
         </li>
@@ -215,7 +215,7 @@
 			
 			    <i class="fa-fw fas fa-comments"></i>
 			
-			Contact
+			留言板
 		</a>
           
         </li>
@@ -226,7 +226,7 @@
 			
 			    <i class="fa-fw fas fa-address-book"></i>
 			
-			Friends
+			友情链接
 		</a>
           
         </li>
@@ -310,12 +310,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/6.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/20.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">myFirstBlog</h1>
+                    <h1 class="description center-align post-title">JS案例</h1>
                 </div>
             </div>
         </div>
@@ -430,7 +430,7 @@
                 <div class="col s7">
                     
                           <div class="article-tag">
-                            <span class="chip bg-color">No tag</span>
+                            <span class="chip bg-color">无标签</span>
                           </div>
                     
                 </div>
@@ -442,8 +442,8 @@
             <div class="post-info">
                 
                 <div class="post-date info-break-policy">
-                    <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2020-12-08
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2020-02-20
                 </div>
                 
 
@@ -464,7 +464,11 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                
+                <p>比较规则：<br>（1）布尔类型与其他类型进行比较,会将其转换成number类型<br>（2）如一方为数值，将非数值使用Number()转为数值：String与Number比较，会将字符串转换成Number<br>（3）双方都非Number，进行toString()后，进行字符串对比大小<br>（4）点运算符会被优先识别为数字常量的一部分，然后才是对象属性访问符<br>（5）数组强制转换成数字的过程会先调用它的 toString方法转成字符串，然后再转成数字。<br>（6）对象之间进行比较，会调用 toString 方法转成字符串进行比较<br>（3）NaN与任何值（包括NaN）比较结果都为false</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">Number([]) &#x2F;&#x2F; 0</span><br><span class="line">Number(&#123;&#125;) &#x2F;&#x2F; NaN</span><br><span class="line">[]&#x3D;&#x3D;false?true:false &#x2F;&#x2F; true</span><br><span class="line">(&#123;&#125;&#x3D;&#x3D;false)?true:false &#x2F;&#x2F; false</span><br><span class="line">Boolean([]); &#x2F;&#x2F;true</span><br><span class="line">[] &#x3D;&#x3D; false; &#x2F;&#x2F; true</span><br><span class="line">Number(new Array(3)) &#x3D;&#x3D;&#x3D; 0 &#x2F;&#x2F; NaN &#x3D;&#x3D;&#x3D; 0，false</span><br><span class="line">Number(new Array(1)) &#x2F;&#x2F; 0</span><br><span class="line">[1, 2, 3]&gt;[1,2,4] &#x2F;&#x2F; false</span><br><span class="line"></span><br><span class="line">void(0) &#x2F;&#x2F; undefined</span><br><span class="line">void() &#x2F;&#x2F; SyntaxError 语法错误</span><br><span class="line">+0 &#x3D;&#x3D;&#x3D; -0 &#x2F;&#x2F; true</span><br><span class="line">NaN &#x3D;&#x3D;&#x3D; NaN &#x2F;&#x2F;false </span><br><span class="line">Object.is(+0,-0)&#x2F;&#x2F;false  </span><br><span class="line">Object.is(NaN,NaN )&#x2F;&#x2F;true </span><br><span class="line">&#39;9&#39; &lt; &#39;10&#39; &#x2F;&#x2F; false </span><br></pre></td></tr></table></figure>
+<p>内置对象：array|string|Date|Math:<br>（1）不改变原数组：concat join slice map、forEach、some、every、filter<br>（2）filter、map对于已被删除或从未被赋值的索引，不会调用callback</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">arr.slice(start,end)</span><br><span class="line">str.substring(start,end)</span><br><span class="line">str.substr(start，length)</span><br><span class="line">[1,2,3].indexOf(3)&#x2F;&#x2F; 2 返回对应值的索引</span><br><span class="line">Array.of(3,11,8) &#x2F;&#x2F; [3,11,8],返回一组数组</span><br><span class="line"></span><br><span class="line">[].reduce(Math.pow) &#x2F;&#x2F; throwError</span><br><span class="line">[3].reduce(Math.pow) &#x2F;&#x2F; 3,直接返回</span><br><span class="line">[3,2,1].reduce(Math.pow) &#x2F;&#x2F; 9</span><br><span class="line"></span><br><span class="line">[1] &gt; 0  &#x2F;&#x2F; true </span><br><span class="line">[1,2]&gt;0 &#x2F;&#x2F; false</span><br><span class="line">[1,2]&lt;0 &#x2F;&#x2F; false</span><br><span class="line"></span><br><span class="line">[...[1,,3,,5]].map((n) &#x3D;&gt; n);  &#x2F;&#x2F;[1，undefined,3,undefined,5]</span><br><span class="line"></span><br><span class="line">Date(0)     &#x2F;&#x2F; 返回字符串&quot;Fri Feb 19 2021 16:16:33 GMT+0800 (中国标准时间)&quot;</span><br><span class="line">new Date(0) &#x2F;&#x2F; Thu Jan 01 1970 08:00:00 GMT+0800 (中国标准时间)</span><br><span class="line">new Date()  &#x2F;&#x2F; Fri Feb 19 2021 16:16:43 GMT+0800 (中国标准时间)</span><br><span class="line"></span><br><span class="line">Math.trunc(4.1) &#x2F;&#x2F; 4  用于去除一个数的小数部分，返回整数部分。</span><br><span class="line">Math.sign(-5) &#x2F;&#x2F; -1  判断正数, 负数, 正零, 负零, NaN。</span><br><span class="line">Math.min()&gt;Math.max() &#x2F;&#x2F; true Infinity &gt; -Infinity</span><br><span class="line"></span><br><span class="line">[&#x2F;^[a-z]+$&#x2F;.test(null), &#x2F;^[a-z]+$&#x2F;.test()] &#x2F;&#x2F; [true,true]</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var ary &#x3D; [0,1,2];</span><br><span class="line">ary[10] &#x3D; 10;</span><br><span class="line">ary.filter(function(x) &#123; return x &#x3D;&#x3D;&#x3D; undefined;&#125;)  &#x2F;&#x2F; []</span><br></pre></td></tr></table></figure>
                 
             </div>
             <hr/>
@@ -476,34 +480,34 @@
             <div class="reprint__author">
                 <span class="reprint-meta" style="font-weight: bold;">
                     <i class="fas fa-user">
-                        Author:
+                        文章作者:
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="/about" rel="external nofollow noreferrer">John Doe</a>
+                    <a href="/about" rel="external nofollow noreferrer">LUO XIN</a>
                 </span>
             </div>
             <div class="reprint__type">
                 <span class="reprint-meta" style="font-weight: bold;">
                     <i class="fas fa-link">
-                        Link:
+                        文章链接:
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2020/12/08/myFirstBlog/">http://example.com/2020/12/08/myFirstBlog/</a>
+                    <a href="http://example.com/2020/02/20/myFirstBlog/">http://example.com/2020/02/20/myFirstBlog/</a>
                 </span>
             </div>
             <div class="reprint__notice">
                 <span class="reprint-meta" style="font-weight: bold;">
                     <i class="fas fa-copyright">
-                        Reprint policy:
+                        版权声明:
                     </i>
                 </span>
                 <span class="reprint-info">
-                    All articles in this blog are used except for special statements
+                    本博客所有文章除特別声明外，均采用
                     <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
-                    reprint polocy. If reproduced, please indicate source
-                    <a href="/about" target="_blank">John Doe</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">LUO XIN</a>
                     !
                 </span>
             </div>
@@ -512,7 +516,7 @@
 
     <script async defer>
       document.addEventListener("copy", function (e) {
-        let toastHTML = '<span>Copied successfully, please follow the reprint policy of this article</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">more</a>';
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
         M.toast({html: toastHTML})
       });
 
@@ -527,7 +531,7 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">No tag</span>
+                            <span class="chip bg-color">无标签</span>
                         </div>
                     
                 </div>
@@ -695,18 +699,17 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;Current
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/12/08/myFirstBlog/">
+                <a href="/2020/12/08/hello-world/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="myFirstBlog">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
                         
-                        <span class="card-title">myFirstBlog</span>
+                        <span class="card-title">Hello World</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -716,18 +719,17 @@
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-12-08
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-12-08
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
-                            John Doe
+                            LUO XIN
                             
                         </span>
                     </div>
                 </div>
-
                 
             </div>
         </div>
@@ -735,16 +737,16 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                Next&nbsp;<i class="fas fa-chevron-right"></i>
+                本篇&nbsp;<i class="far fa-dot-circle"></i>
             </div>
             <div class="card">
-                <a href="/2020/12/08/try/">
+                <a href="/2020/02/20/myFirstBlog/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="try">
+                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="JS案例">
                         
-                        <span class="card-title">try</span>
+                        <span class="card-title">JS案例</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -755,16 +757,17 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-12-08
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-20
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
-                            John Doe
+                            LUO XIN
                             
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -797,7 +800,7 @@
     </div>
     <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
         <div class="toc-widget card" style="background-color: white;">
-            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;TOC</div>
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
             <div id="toc-content"></div>
         </div>
     </div>
@@ -955,10 +958,10 @@
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             
-                <span id="year">2019-2020</span>
+                <span id="year">2019-2021</span>
             
             <span id="year">2019</span>
-            <a href="/about" target="_blank">John Doe</a>
+            <a href="/about" target="_blank">LUO XIN</a>
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
             |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
             <br>
@@ -1026,8 +1029,8 @@
 <div id="searchModal" class="modal">
     <div class="modal-content">
         <div class="search-header">
-            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;Search</span>
-            <input type="search" id="searchInput" name="s" placeholder="Please enter a search keyword"
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
                    class="search-input">
         </div>
         <div id="searchResult"></div>
